@@ -1,5 +1,5 @@
 <?php
-include "C:\Users\User\Documents\PHP CRUD PROJECT\php\db2.php";
+include "C:\Users\User\Documents\PHP CRUD PROJECT\db2.php";
 $id = $_GET["id"];
 $sql = "DELETE FROM `art_gallery` WHERE artID = $id";
 $result = mysqli_query($conn, $sql);
