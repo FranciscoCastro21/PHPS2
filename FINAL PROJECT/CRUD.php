@@ -1,11 +1,4 @@
 <?php
-include "C:\Users\User\Documents\PHP CRUD PROJECT\php\db2.php";
-?>
-
-<!DOCTYPE html>
-<html lang="en">
-
-<?php
 include "C:\Users\User\Documents\PHP CRUD PROJECT\db2.php";
 ?>
 
