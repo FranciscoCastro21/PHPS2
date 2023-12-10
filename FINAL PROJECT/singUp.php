@@ -23,7 +23,7 @@ if ( ! preg_match("/[0-9]/", $_POST["user_password"])) {
 
 $password_hash = password_hash($_POST["user_password"], PASSWORD_DEFAULT);
 
-$mysqli = require __DIR__ . "/dbh.php";
+$mysqli = require __DIR__ . "dbh.php";
 
 $sql = "INSERT INTO user (username, email, user_password)
         VALUES (?, ?, ?)";
@@ -41,7 +41,7 @@ $stmt->bind_param("sss",
                   
 if ($stmt->execute()) {
 
-    header("Location: ../navigtion/index.php");
+    header("Location: index.php");
     exit;
     
 } else {
